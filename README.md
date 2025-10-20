@@ -1,6 +1,6 @@
 # projeto-eletiva
-## Trabalho Prático 2 – Sistema WEB
-## Xhopii - Sistema WEB Estação de Rádio
+# Trabalho Prático 2 – Sistema WEB
+## Giana Station - Sistema WEB Estação de Rádio/Música
 
 ------------------------------------------------------------------------------
 
