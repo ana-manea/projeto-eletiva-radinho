@@ -2,50 +2,76 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    padding: 5vh 8vw;
+    color: #fff;
+    background-image: linear-gradient(180deg, #292929, #000000);
 }
 
 .conteudo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 40px;
 
-
-    --tamanhoInput: 90%;
+    margin: 5vh 22%;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #121212;
+    /* Variável CSS */
+    --tamanhoInput: 110%;
 }
 
+.conectar-btn,
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
     width: 40%;
 }
 
-.campo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-start;
-
-    position: relative;
+.conectar-btn button,
+form input {
+    width: var(--tamanhoInput);
+    border: 1px #9b9b9b solid;
+    border-radius: 50px;
+    padding: 15px 10px;
+    color: #fff;
+    font-weight: 900;
+    font-weight: 900;
+    background-color: transparent;
 }
 
-.campo label{
-    position: absolute;
-    bottom: 5px;
+.conteudo .linha {
+    width: 80%;
+    border-top: 1px solid #232323;
+}
 
+.conteudo form input[type="email"],
+.conteudo form input[type="password"] {
+    border-radius: 10px;
+}
+
+.conteudo form input[type="submit"] {
+    color: #000;
+    background-color: #1ed760;
+}
+
+form label {
     width: calc(var(--tamanhoInput) - 5%);
 }
 
-
-
-.campo input {
-    border-radius: 10px;
-    width: var(--tamanhoInput);
-    height: 30px;
-    padding: 0px 5%;
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    font-size: .8em;
+    background-color: #121212;
 }
-

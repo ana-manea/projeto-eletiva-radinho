@@ -9,26 +9,40 @@
     <title>Giana Station</title>
 </head>
 <body>
-    <header>
-        <h1>Giana Station</h1>
-    </header>
 
     <section class="conteudo">
-        <h3>Entre e curta suas músicas</h3>
+        <section>
+            <img>
+            <h1>Entrar na Giana Station</h1>
+        </section>
+
+        <section class="conectar-btn">
+            <button>Continuar com Google</button>
+            <button>Continuar com Facebook</button>
+            <button>Continuar com Apple</button>
+            <button>Continuar com número de telefone</button>
+        </section>
+
+        <div class="linha"></div>
+
         <form>
-            <section class="campo">
-                <label for="email_login">E-mail</label>
-                <input type="email" name="email" id="email_login" required>
-            </section>
+            <label for="email_login">E-mail ou nome de usuário</label>
+            <input type="email" name="email" id="email_login" required>
 
-            <section class="campo">
-                <label for="senha_login">Senha</label>
-                <input type="password" name="senha" id="senha_login" required>
-            </section>
-
+            <label for="senha_login">Senha</label>
+            <input type="password" name="senha" id="senha_login" required>
+            
             <input type="submit" value="Entrar">
         </form>
         <a href="redefinir_senha.html">Esqueci minha senha</a>
+        <p>
+            Não tem uma conta?
+            <a href="">Inscrever-se na Giana Station</a>
+        </p>
     </section>
+
+    <footer>
+        <p>Este site é protegido pelo reCAPTCHA e está sujeito à Política de Privacidade e aos Termos de Serviço do Google.</p>
+    </footer>
 </body>
 </html>
