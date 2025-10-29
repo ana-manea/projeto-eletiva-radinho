@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style-cadUsuario.css">
+    <title>Giana Station</title>
+</head>
+<body>
+    <section class="cabecalho"> <!-- heading-->
+        <img>
+        <h1>Cadastre e comece a curtir a Giana Station</h1>
+    </section>
+    <div class="linha"></div>
+    <section class="conteudo">
+        <form method="POST" action="" id="singup">
+            <section class="form-grupo">
+                <label for="email">Endereço de e-mail</label>
+                <input type="email" id="email" placeholder="nome@domínio.com" required>
+            </section>
+
+            <a href="#" class="telefone">Usar número de telefone</a>
+
+            <button type="submit" class="btn-avancar">Avançar</button> <!--btn btn-primary-->
+
+            <div class="linha"></div>
+            
+            <section>
+                <img src="" alt="">
+                <button type="button" class="btn-conectar" onclick="handleGoogleSignup()">Inscrever-se com o Google</button>
+            </section>
+
+            <section>
+                <img src="" alt="">
+                <button type="button" class="btn-conectar" onclick="handleAppleSignup()">Criar conta com a Apple</button>
+            </section>
+
+        </form>
+
+        <section class="singin-link">
+            <p>
+                Já tem uma conta? 
+                <a href="#">Entrar</a>
+            </p>
+        </section>
+    </section>
+    <section class="rodape">
+         <footer>
+            <p>Este site é protegido pelo reCAPTCHA e está sujeito à Política de Privacidade e aos Termos de Serviço do Google.</p>
+        </footer>
+    </section>
+</body>
+</html>
