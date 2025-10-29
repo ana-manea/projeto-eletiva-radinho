@@ -27,6 +27,7 @@
 - No mínimo quatro telas de cadastro com persistência em Banco de Dados, pense no exemplo do Sistema Xhopii (Existem três cadastros: Cliente, Produto e Funcionários);
 - Cadastro de usuario 
 > HTML e CSS - **Ana**
+
 - No mínimo quatro telas de visualização de cadastro, ou seja, recuperação dos dados existentes no Banco de Dados e exibição em páginas WEB;
 - Implementar uma funcionalidade específica de sua temática, cada grupo possui um tema de sistema validado pelo professor, implemente uma funcionalidade dessa temática. Exemplo: No Sistema Xhopii uma  funcionalidade da temática de e-commerce é realizar uma venda.
 
