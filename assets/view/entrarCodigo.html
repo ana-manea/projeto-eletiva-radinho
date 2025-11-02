@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/styles/entrarStyle.css">
+    <link rel="stylesheet" href="../styles/entrarStyle.css">
 
     <title>Giana Station</title>
 </head>
@@ -15,22 +15,23 @@
             <img>
         </section>
 
-        <h1>Insira o código de 6 dígitos enviado para a********b@l.com.</h1>
-        
         <form>
-            <input type="number" name="codEntrar1" id="cod_login" required>
-            <input type="number" name="codEntrar2" id="cod_login" required>
-            <input type="number" name="codEntrar3" id="cod_login" required>
-            <input type="number" name="codEntrar4" id="cod_login" required>
-            <input type="number" name="codEntrar5" id="cod_login" required>
-            <input type="number" name="codEntrar6" id="cod_login" required>
+            <h1 class="titulo">Insira o código de 6 dígitos enviado para a********b@l.com.</h1>
+            <section class="codigo_btns">
+                <input type="number" name="codEntrar1" id="cod1">
+                <input type="number" name="codEntrar2" id="cod2">
+                <input type="number" name="codEntrar3" id="cod3">
+                <input type="number" name="codEntrar4" id="cod4">
+                <input type="number" name="codEntrar5" id="cod5">
+                <input type="number" name="codEntrar6" id="cod6">
+            </section>
             
-            <button>Reenviar Código</button>
+            <button id="reenviar_btn">Reenviar Código</button>
 
             <input type="submit" value="Entrar">
         </form>
         
-        <p><a href="entrarSenha.html">Entrar com senha</a></p>
+        <a href="entrarSenha.html" class="linkSenha"><p>Entrar com senha</p></a>
     </section>
 
     <footer>
