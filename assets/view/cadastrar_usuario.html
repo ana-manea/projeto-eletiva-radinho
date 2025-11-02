@@ -4,16 +4,23 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style-cadUsuario.css">
+    <link rel="stylesheet" href="../styles/style-cadUsuario.css">
     <title>Giana Station</title>
 </head>
 <body>
+    <!--
     <section class="cabecalho"> 
         <img>
         <h1>Cadastre e comece a curtir a Giana Station</h1>
     </section>
     <div class="linha1"></div>
+    -->
     <section class="conteudo">
+        <section class="cabecalho"> 
+            <img>
+            <h1>Cadastre e comece a curtir a Giana Station</h1>
+        </section>
+
         <form method="POST" action="" id="singup">
             <section class="form-grupo">
                 <label for="email">Endereço de e-mail</label>
@@ -25,7 +32,8 @@
             <button type="submit" class="btn-avancar">Avançar</button> 
 
             <div class="linha2"></div>
-            
+
+            <!--       
             <section>
                 <img src="" alt="">
                 <button type="button" class="btn-conectar" onclick="handleGoogleSignup()">Inscrever-se com o Google</button>
@@ -34,16 +42,31 @@
             <section>
                 <img src="" alt="">
                 <button type="button" class="btn-conectar" onclick="handleAppleSignup()">Criar conta com a Apple</button>
+            </section>-->
+            <section class="btn-conectar-space">
+                <button type="button" class="btn-conectar" onclick="handleGoogleSignup()">
+                    <img src="../img/logo-google.png">
+                    Inscrever-se com o Google
+                </button>
+                
+                <button type="button" class="btn-conectar" onclick="handleAppleSignup()">
+                    <img src="../img/apple-logo.png">
+                    Criar conta com a Apple
+                </button>
             </section>
-
         </form>
 
+        <!--
         <section class="singin-link">
             <p>
                 Já tem uma conta? 
-                <a href="#">Entrar</a>
+                <a href="../../index.html">Entrar</a>
             </p>
-        </section>
+        </section> -->
+        <p class="signin-link">
+            Já tem uma conta? 
+            <a href="../../index.html">Entrar</a>
+        </p>
     </section>
     <footer>
         <section class="rodape">

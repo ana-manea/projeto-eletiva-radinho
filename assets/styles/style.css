@@ -40,16 +40,39 @@ form input {
     width: var(--tamanhoInput);
     border: 1px #9b9b9b solid;
     border-radius: 50px;
-    padding: 15px 10px;
+    padding: 16px 32px;
     color: #fff;
-    font-weight: 900;
+    font-size: 1rem;
     font-weight: 900;
     background-color: transparent;
+    transition: all 0.2s;
+}
+
+.conectar-btn button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.conectar-btn button:hover {
+    cursor: pointer;
+    background-color: rgb(26, 26, 26);
+    border-color: white;
+}
+
+.conectar-btn button img {
+    width: 10%;
 }
 
 .conteudo .linha {
     width: 80%;
     border-top: 1px solid #232323;
+}
+
+form label {
+    width: calc(var(--tamanhoInput) - 5%);
 }
 
 .conteudo form input[type="email"],
@@ -59,11 +82,28 @@ form input {
 
 .conteudo form input[type="submit"] {
     color: #000;
-    background-color: #1ed760;
+    background-color: #7847eb;
 }
 
-form label {
-    width: calc(var(--tamanhoInput) - 5%);
+.conteudo form input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #6636d4;
+    transform: scale(1.02);
+}
+
+.conteudo .linkCadastrar {
+    color: #a7a7a7;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.conteudo .linkCadastrar a {
+    color: #fff;
+    transition: color 0.2s;
+}
+
+.conteudo .linkCadastrar a:hover {
+    color: #6636d4;
 }
 
 footer {

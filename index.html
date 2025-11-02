@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../projeto-eletiva-radinho/assets/style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+
     <title>Giana Station</title>
 </head>
 <body>
@@ -14,9 +15,17 @@
         </section>
 
         <section class="conectar-btn">
-            <button>Continuar com Google</button>
-            <button>Continuar com Facebook</button>
-            <button>Continuar com Apple</button>
+            <button>
+                <img src="assets/img/logo-google.png">
+                Continuar com Google</button>
+
+            <button>
+                <img src="assets/img/logo-facebook-cicle.png">
+                Continuar com Facebook</button>
+
+            <button>
+                <img src="assets/img/apple-logo.png">
+                Continuar com Apple</button>
             <button>Continuar com número de telefone</button>
         </section>
 
@@ -24,17 +33,14 @@
 
         <form>
             <label for="email_login">E-mail ou nome de usuário</label>
-            <input type="email" name="email" id="email_login" required>
-
-            <label for="senha_login">Senha</label>
-            <input type="password" name="senha" id="senha_login" required>
+            <input type="email" name="email" id="email_login">
             
-            <input type="submit" value="Entrar">
+            <input type="submit" id="entrar_senha" value="Continuar">
+            <a href="assets/view/entrarSenha.html">Temporário</a>
         </form>
-        <a href="../projeto-eletiva-radinho/assets/view/redefinir_senha.html">Esqueci minha senha</a>
-        <p>
+        <p class="linkCadastrar">
             Não tem uma conta?
-            <a href="">Inscrever-se na Giana Station</a>
+            <a href="assets/view/cadastrar_usuario.html">Inscrever-se na Giana Station</a>
         </p>
     </section>
 
