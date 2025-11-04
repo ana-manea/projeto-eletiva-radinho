@@ -15,20 +15,6 @@ body {
     min-height: 100vh;
 }
 
-.cabecalho{
-    text-align: center;
-    margin-bottom: 2rem;
-    max-width: 600px;
-}
-
-/*
-.cabecalho h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 1.1;
-}
-*/
-
 .conteudo {
     display: flex;
     align-items: center;
@@ -39,23 +25,31 @@ body {
     border-radius: 10px;
     padding: 40px;
     background-color: rgb(18, 18, 18);
-
-    /*
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
-
     /* Variável CSS */
     --tamanhoInput: 110%;  
 }
-/*
-.linha1 {
-    max-width: 650px;
-    width: 100%;
-    border-top: 1px solid rgb(123, 123, 123);
-}*/
+    
+.cabecalho {
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    width: 60%;
+}
+
+.cabecalho h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.cabecalho img {
+    width: 25%;
+}
 
 .conteudo form {
-    width: 60%;
+        width: 60%;
 }
 
 .linha2 {
@@ -94,7 +88,7 @@ input[type="email"]:focus {
 
 .telefone {
     display: block;
-    color: #7847eb;
+    color: #d518ee;
     font-size: 0.875rem;
     font-weight: 600;
     text-decoration: underline;
@@ -104,7 +98,7 @@ input[type="email"]:focus {
 }
 
 .telefone:hover {
-    color: #6636d4;
+    color: #e88bf5;
 }
 
 button {
@@ -124,13 +118,13 @@ button {
 }
 
 .btn-avancar {
-    background-color: #7847eb;
+    background-color: #d518ee;
     color: black;
     margin-bottom: 1rem;
 }
 
 .btn-avancar:hover {
-    background-color: #6636d4;
+    background-color: #e88bf5;
     transform: scale(1.02);
 }
 
@@ -150,12 +144,9 @@ button {
     align-items: center;
     justify-content: space-around;
     gap: 5px;
-
     background-color: transparent;
     border: 1px solid rgb(114, 114, 114);
     color: white;
-    /*
-    margin-bottom: 0.75rem;*/
 }
 
 .btn-conectar-space .btn-conectar img {
@@ -168,21 +159,22 @@ button {
 }
 
 p.signin-link {
-    text-align: center;
-    /*
-    margin-top: 2rem;
-    padding-top: 1rem; */  
+    text-align: center; 
     font-size: 0.875rem;
     color: rgb(167, 167, 167);
 }
 
-p.signin-link a {
-    color: white;
+.singin-link a {
+    color: #d518ee;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
     transition: color 0.2s;
 }
 
-p.signin-link a:hover {
-    color: #6636d4;
+.singin-link a:hover {
+    color: #e88bf5;
+    text-decoration: underline;
 }
 
 .rodape {
@@ -202,7 +194,7 @@ footer {
     color: rgb(255, 255, 255);
     background-color: rgb(18, 18, 18);
     line-height: 1.5;
-    width: 100%; /* Tava criando barra de rolagem */   
+    width: 100%;    
     margin-top: auto;
     margin-bottom: 0;        
     padding: 20px; 

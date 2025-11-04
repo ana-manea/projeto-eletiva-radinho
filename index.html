@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/style.css">
-
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/GA-Station.png">
+    <script type="text/javascript" src="assets/script.js"></script>
     <title>Giana Station</title>
 </head>
 <body>
     <section class="conteudo">
-        <section>
-            <img>
+        <section class="cabecalho">
+            <img src="assets/img/GA-Station.png">
             <h1>Entrar na Giana Station</h1>
         </section>
 
@@ -35,12 +36,13 @@
             <label for="email_login">E-mail ou nome de usuário</label>
             <input type="email" name="email" id="email_login">
             
-            <input type="submit" id="entrar_senha" value="Continuar">
+            <input type="submit" id="entrar_senha" value="Continuar" onclick="redirecionarHome(this)">
+            
             <a href="assets/view/entrarSenha.html">Temporário</a>
         </form>
         <p class="linkCadastrar">
             Não tem uma conta?
-            <a href="assets/view/cadastrar_usuario.html">Inscrever-se na Giana Station</a>
+            <a href="assets/view/cadastrarUuario.html">Inscrever-se na Giana Station</a>
         </p>
     </section>
 
