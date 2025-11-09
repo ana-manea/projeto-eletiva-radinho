@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style-criarSenha.css">
+    <script type="text/javascript" src="../scripts/script-cadUsuario.js"></script>
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/GA-Station.png">
+    <title>Criar Senha | Giana Station</title>
+</head>
+<body>
+    <section class="conteudo">
+        <section class="cabecalho"> 
+            <img src="../img/GA-Station.png">
+        </section>
+
+        <section class="barra-progresso"> 
+            <div class="porcentagem"></div>
+        </section>
+
+        <form method="POST" action="" id="formSenha"> 
+            <section class="etapa">
+                <button type="button" class="btn-voltar" id="returnCad" onclick="retornarCad()">
+                    <img src="../img/return.png">
+                </button>
+                <section class="etapa-conteudo">
+                    <p class="info-etapa">Etapa 1 de 3</p>
+                    <h1>Crie uma senha</h1>
+                </section>
+            </section>
+            <section class="form-grupo"> 
+                <label for="senha">Senha</label>
+                <section class="botao-senha"> 
+                    <input type="password" id="password" required>
+                    <button type="button" class="visualizacao-senha" id="visualizacaoSenha"> 
+                        <img id="verSenha" src="../img/esconder.png"> 
+                        <img id="esconderSenha" src="../img/ver.png" style="display: none;"">
+                    </button>
+                </section>
+            </section>
+
+            <section class="requerimentos">
+                <p>A senha deve ter pelo menos</p>
+                <section class="item-requerimento">
+                    <span class="requiremento-check" id="checkLetra">✓</span>
+                        <span>1 letra</span>
+                </section>
+
+                <section class="item-requerimento">
+                    <span class="requiremento-check" id="checkEspecial">✓</span>
+                        <span>1 número ou caractere especial (exemplo: # ? ! &)</span>
+                </section>
+
+                <section class="item-requerimento">
+                    <span class="requiremento-check" id="checkTamanho">✓</span>
+                        <span>10 caracteres</span>
+                </section>
+            </section>
+            <button type="submit" class="btn-avancar" id="submitBtn" disabled>Avançar</button>
+        </form>
+    </section>
+
+    <footer>
+        <section class="rodape">
+            <p>Este site é protegido pelo reCAPTCHA e está sujeito à Política de Privacidade e aos Termos de Serviço do Google.</p>
+        </section>
+    </footer>
+</body>
+</html>
