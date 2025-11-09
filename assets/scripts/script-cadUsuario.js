@@ -1,14 +1,46 @@
+/*Navegação entre as páginas*/
+
+/*Cadastro de usuário página inicial*/
 function cadastrarSenha(event) {
     event.preventDefault();
     window.location.href = "../view/criarSenha.html";
 }
 
+/*Segunda página de criar usuário: Criar senha*/
 function retornarCad() {
     window.location.href = "../view/cadastrarUsuario.html";
 }
 
+/*Terceira página de criar usuário: Informações usuário*/
+function retornarSenha() {
+    window.location.href = "../view/criarSenha.html";
+}
 
+/*Quarta página de criar usuário: Termos e condições*/
+function retornarInfo() {
+    window.location.href = "../view/infoUsuario.html";
+}
+
+/*Inicialização das páginas */
 document.addEventListener('DOMContentLoaded', function() {
+    const formSenha = document.getElementById('formSenha');
+    const formInfo = document.getElementById('formInfo');
+    const formTermos = document.getElementById('formTermos');
+
+    if (formSenha) {
+        inicializarPaginaSenha();
+    }
+
+    if (formInfo) {
+        inicializarPaginaInfo();
+    }
+
+    if (formTermos) {
+        inicializarPaginaTermos();
+    }
+});
+
+function inicializarPaginaSenha() {
     const passwordInput = document.getElementById('password');
     const visualizacaoSenha = document.getElementById('visualizacaoSenha');
     const verSenha = document.getElementById('verSenha');
@@ -17,9 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const checkLetra = document.getElementById('checkLetra');
     const checkEspecial = document.getElementById('checkEspecial');
     const checkTamanho = document.getElementById('checkTamanho');
-    const formSenha = document.getElementById('formSenha');
-
-    if (!passwordInput) return;
     
     let mostrarSenha = false;
 
@@ -45,19 +74,14 @@ document.addEventListener('DOMContentLoaded', function() {
         submitBtn.disabled = !isValid;
     });
 
-    formSenha.addEventListener('submit', (e) => {
+    document.getElementById('formSenha').addEventListener('submit', (e) => {
         e.preventDefault();
         window.location.href = "../view/infoUsuario.html";
     });
-});
-
-
-function retornarSenha() {
-    window.location.href = "../view/criarSenha.html";
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const formInfo = document.getElementById('formInfo');
+/*Terceira página de criar usuário: Informações usuário*/
+function inicializarPaginaInfo() {
     const submitBtn = document.getElementById('submitBtn');
     const nomeInput = document.getElementById('nome');
     const diaInput = document.getElementById('dia');
@@ -101,8 +125,24 @@ document.addEventListener('DOMContentLoaded', function() {
         submitBtn.disabled = !isValid;
     }
 
-    formInfo.addEventListener('submit', function(e) {
+    document.getElementById('formInfo').addEventListener('submit', function(e) {
         e.preventDefault();
-        window.location.href = "../view/TermosCondicoes.html"; 
+        window.location.href = "../view/termosCondicoes.html";
     });
-});
+}
+
+/*Quarta página de criar usuário: Termos e condições*/
+function inicializarPaginaTermos() {    
+    const formTermos = document.getElementById('formTermos');
+    const submitBtn = document.getElementById('submitBtn');
+    const aceitarTermos = document.getElementById('aceitarTermos');
+
+    aceitarTermos.addEventListener('change', () => {
+        submitBtn.disabled = !aceitarTermos.checked;
+    });
+
+    formTermos.addEventListener('submit', function(e) {
+        e.preventDefault();
+        window.location.href = "../view/pagInicial.html";
+    });
+}
