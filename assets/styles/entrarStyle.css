@@ -130,18 +130,19 @@ input::-webkit-inner-spin-button {
 .conteudo form input[type="submit"] {
     width: var(--tamanhoInput);
     padding: 16px 32px;
+    font-size: 1rem;
 }
 
 .conteudo form input[type="submit"] {
     margin: 25px 0px;
     border: none;
     color: #000;
-    background-color: #7847eb;
+    background-color: #d518ee;
 }
 
 .conteudo form input[type="submit"]:hover {
     cursor: pointer;
-    background-color: #6636d4;
+    background-color: #e88bf5;
     transform: scale(1.02);
 }
 
