@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style-cadUsuario.css">
+    <script type="text/javascript" src="../scripts/script-cadUsuario.js"></script>
     <link rel="icon" type="image/png" sizes="96x96" href="../img/GA-Station.png">
-    <title>Cadastrar | Giana Station</title>
+    <title>Inscrever-se | Giana Station</title>
 </head>
 <body>
     <section class="conteudo">
@@ -23,7 +24,7 @@
 
             <a href="#" class="telefone">Usar número de telefone</a>
 
-            <button type="submit" class="btn-avancar">Avançar</button> 
+            <button type="submit" class="btn-avancar" id="cadSenha" onclick="cadastrarSenha(event)">Avançar</button> 
 
             <div class="linha2"></div>
 
@@ -41,8 +42,8 @@
         </form>
 
         <section class="singin-link">
+            <p>Já tem uma conta?</p>
             <p>
-                Já tem uma conta? 
                 <a href="../../index.html">Entrar</a>
             </p>
         </section>

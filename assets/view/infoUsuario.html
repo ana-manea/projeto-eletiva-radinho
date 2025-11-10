@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style-infoUsuario.css">
+    <script type="text/javascript" src="../scripts/script-cadUsuario.js"></script>
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/GA-Station.png">
+    <title>Inscrever-se | Giana Station</title>
+</head>
+<body>
+    <section class="conteudo">
+        <section class="cabecalho"> 
+            <img src="../img/GA-Station.png">
+        </section>
+
+        <section class="barra-progresso"> 
+            <div class="porcentagem"></div>
+        </section>
+
+        <form method="POST" action="" id="formInfo"> 
+            <section class="etapa">
+                <button type="button" class="btn-voltar" id="returnSenha" onclick="retornarSenha()">
+                    <img src="../img/return.png">
+                </button>
+                <section class="etapa-conteudo">
+                    <p class="info-etapa">Etapa 2 de 3</p>
+                    <h1>Fale de você</h1>
+                </section>
+            </section>
+
+            <section class="form-grupo">
+                <label for="nome">Nome</label>
+                <p class="descricao">Este nome aparecerá no seu perfil</p>
+                <input type="text" id="nome" required>
+            </section>
+
+            <section class="form-grupo">
+                <label for="dataNascimento">Data de Nascimento</label>
+                <p class="descricao">
+                    Por que precisamos da sua data de nascimento?
+                    <a href="#" class="link-info">Saiba mais</a>
+                </p>
+                <section class="data-nascimento">
+                    <input type="text" id="dia" placeholder="dd" maxlength="2" required>
+                    <select id="mes" required>
+                        <option value="">Mês</option>
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value="7">Julho</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                    <input type="text" id="ano" placeholder="aaaa" maxlength="4" required>
+                </section>
+            </section>
+
+            <section class="form-grupo">
+                <label for="genero">Gênero</label>
+                <p class="descricao">
+                    Usamos seu gênero para ajudar a personalizar nossas recomendações de conteúdo e anúncios pra você.
+                </p>
+                <section class="genero-opcoes">
+                    <label class="opcao-radio">
+                        <input type="radio" name="genero" value="mulher" required>
+                        <span>Mulher</span>
+                    </label>
+                    <label class="opcao-radio">
+                        <input type="radio" name="genero" value="homem">
+                        <span>Homem</span>
+                    </label>
+                    <label class="opcao-radio">
+                        <input type="radio" name="genero" value="nao-binario">
+                        <span>Não binário</span>
+                    </label>
+                    <label class="opcao-radio">
+                        <input type="radio" name="genero" value="outro">
+                        <span>Outro</span>
+                    </label>
+                    <label class="opcao-radio">
+                        <input type="radio" name="genero" value="prefiro-nao-dizer">
+                        <span>Prefiro não dizer</span>
+                    </label>
+                </section>
+            </section>
+
+            <button type="submit" class="btn-avancar" id="submitBtn" disabled>Avançar</button>
+        </form>
+    </section>
+
+    <footer>
+        <section class="rodape">
+            <p>Este site é protegido pelo reCAPTCHA e está sujeito à Política de Privacidade e aos Termos de Serviço do Google.</p>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style-termosCondicoes.css">
+    <script type="text/javascript" src="../scripts/script-cadUsuario.js"></script>
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/GA-Station.png">
+    <title>Inscrever-se | Giana Station</title>
+</head>
+<body>
+    <section class="conteudo">
+        <section class="cabecalho"> 
+            <img src="../img/GA-Station.png">
+        </section>
+
+        <section class="barra-progresso"> 
+            <div class="porcentagem"></div>
+        </section>
+
+        <form method="POST" action="" id="formTermos"> 
+            <section class="etapa">
+                <button type="button" class="btn-voltar" id="returnInfo" onclick="retornarInfo()">
+                    <img src="../img/return.png">
+                </button>
+                <section class="etapa-conteudo">
+                    <p class="info-etapa">Etapa 3 de 3</p>
+                    <h1>Termos e Condições</h1>
+                </section>
+            </section>
+
+            <section class="checkbox-grupo">
+                <label for="marketing" class="opcao-checkbox">
+                    <input type="checkbox" id="marketing" name="marketing">
+                    <span>Não quero receber mensagens de marketing da Giana Station</span>
+                </label>
+
+                <label for="dados" class="opcao-checkbox">
+                    <input type="checkbox" name="compartilharDados" id="compartilharDados">
+                    <span>Compartilhar meus dados cadastrais com os provedores de conteúdo da Giana Station para fins de marketing</span>
+                </label>
+
+                <label for="termos" class="opcao-checkbox">
+                    <input type="checkbox" name="aceitarTermos" id="aceitarTermos">
+                    <span>
+                        A Giana Station é um serviço personalizado. Eu concordo com os <a href="#" class="link-destaque">Termos e Condições de Uso da Giana Station</a>
+                    </span>
+                </label>
+            </section>
+
+            <section class="aviso-privacidade">
+                <p>
+                    Ao clicar no botão inscrever-se abaixo, você confirma que leu sobre como tratamos seus dados pessoais na nossa <a href="#" class="link-destaque">Política de privacidade</a>
+                </p>
+            </section>
+
+            <button type="submit" class="btn-avancar" id="submitBtn" disabled>Inscrever-se</button>
+        </form>
+    </section>
+
+    <footer>
+        <section class="rodape">
+            <p>Este site é protegido pelo reCAPTCHA e está sujeito à Política de Privacidade e aos Termos de Serviço do Google.</p>
+        </section>
+    </footer>
+</body>
+</html>
