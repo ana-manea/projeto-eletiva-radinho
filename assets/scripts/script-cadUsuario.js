@@ -127,7 +127,7 @@ function inicializarPaginaInfo() {
 
     document.getElementById('formInfo').addEventListener('submit', function(e) {
         e.preventDefault();
-        window.location.href = "../view/termosCondicoes.html";
+        window.location.href = "../view/termoCondicoes.html";
     });
 }
 

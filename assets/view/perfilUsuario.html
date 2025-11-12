@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giana Station</title>
 
-    
+
     <!-- CSS Comuns -->
     <link rel="stylesheet" href="../styles/style-cabecalho.css">
     <link rel="stylesheet" href="../styles/style-menusSuspenso-Lateral.css">
     <link rel="stylesheet" href="../styles/style-rodape.css">
     
     <!-- CSS da Página -->
-    <link rel="stylesheet" href="../styles/style-pagInicial.css">
-
+    <link rel="stylesheet" href="../styles/style-perfilUsuario.css">
+    
 
     <script src="../scripts/script-menuSuspenso.js"></script>
-
+    <script src="../scripts/script-addFoto.js"></script>
 
 </head>
 <body>
@@ -26,8 +26,7 @@
             <section>
                 <a href="pagInicial.html">
                     <button id="home">
-                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24">
-                            <path d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732z"></path>
+                        <svg viewBox="0 0 24 24"><path d="M12.5 3.247a1 1 0 0 0-1 0L4 7.577V20h4.5v-6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v6H20V7.577zm-2-1.732a3 3 0 0 1 3 0l7.5 4.33a2 2 0 0 1 1 1.732V21a1 1 0 0 1-1 1h-6.5a1 1 0 0 1-1-1v-6h-3v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.577a2 2 0 0 1 1-1.732z"></path>
                         </svg>
                     </button> <!--Home-->
                 </a>
@@ -93,49 +92,69 @@
         </aside>
 
         <section class="principal"> <!-- Principal -->
-            <section class="filter"> <!--Filtro-->
-                <button>Tudo</button>
-                <button>Minhas Músicas</button>
-                <button>Recomendadas</button>
-            </section>
 
-            <section class="carrossel"> <!--1o Carrossel-->
-                <article class="albuns-titulo">
-                    <!--Título-->
-                    <h1>Músicas mais ouvidas</h1>
-                    <button>Mostrar tudo</button>
-                </article>
-
-                <section class="albuns">
-                    <!--Álbuns-->
-                    <section class="card">
-                        <article class="card-img">
-                            <img>
-                        </article>
-
-                        <article class="nome-categoria">
-                            <p class="nome">Nome</p>
-                            <p class="categoria">Artista</p>
-                        </article>
-                    </section>
+            <section class="infos"> <!-- Infos -->
+                <section class="espacoFoto">
+                    <article id="foto">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M10.165 11.101a2.5 2.5 0 0 1-.67 3.766L5.5 17.173A3 3 0 0 0 4 19.771v.232h16.001v-.232a3 3 0 0 0-1.5-2.598l-3.995-2.306a2.5 2.5 0 0 1-.67-3.766l.521-.626.002-.002c.8-.955 1.303-1.987 1.375-3.19.041-.706-.088-1.433-.187-1.727a3.7 3.7 0 0 0-.768-1.334 3.767 3.767 0 0 0-5.557 0c-.34.37-.593.82-.768 1.334-.1.294-.228 1.021-.187 1.727.072 1.203.575 2.235 1.375 3.19l.002.002zm5.727.657-.52.624a.5.5 0 0 0 .134.753l3.995 2.306a5 5 0 0 1 2.5 4.33v2.232H2V19.77a5 5 0 0 1 2.5-4.33l3.995-2.306a.5.5 0 0 0 .134-.753l-.518-.622-.002-.002c-1-1.192-1.735-2.62-1.838-4.356-.056-.947.101-1.935.29-2.49A5.7 5.7 0 0 1 7.748 2.87a5.77 5.77 0 0 1 8.505 0 5.7 5.7 0 0 1 1.187 2.043c.189.554.346 1.542.29 2.489-.103 1.736-.838 3.163-1.837 4.355m-.001.001"></path>
+                        </svg>
+                    </article>
                     
-                    <section class="card">
-                        <article class="card-img">
-                            <img>
-                        </article>
+                    <button id="definir-foto">
+                        <svg viewBox="0 0 16 16">
+                            <path d="M11.838.714a2.438 2.438 0 0 1 3.448 3.448l-9.841 9.841c-.358.358-.79.633-1.267.806l-3.173 1.146a.75.75 0 0 1-.96-.96l1.146-3.173c.173-.476.448-.909.806-1.267l9.84-9.84zm2.387 1.06a.94.94 0 0 0-1.327 0l-9.84 9.842a1.95 1.95 0 0 0-.456.716L2 14.002l1.669-.604a1.95 1.95 0 0 0 .716-.455l9.841-9.841a.94.94 0 0 0 0-1.327z"></path>
+                        </svg>
+                        Escolher foto
+                    </button>
+                </section>
 
-                        <article class="nome-categoria">
-                            <p class="nome">Nome</p>
-                            <p class="categoria">Artista</p>
-                        </article>
-                    </section>
+
+                <section class="social-editar">
+                    <p>Perfil</p>
+                    <button id="editar-perfil">
+                        Nome
+                    </button>
+                    <article class="social">
+                        <p>1 playlist públicas</p>
+                        <div></div>
+                        <a>1 seguidor</a>
+                        <div></div>
+                        <a>56 seguindo</a>
+                    </article>
                 </section>
             </section>
 
-            <section class="carrossel"> <!--2o Carrossel-->
+            <section class="opcoes"> <!-- Opções -->
+                <article onclick="interagirMenuOpcoes()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                    </svg>
+                </article>
+                <ul id="opcoes-menu-suspenso">
+                    <li class="editar">
+                        <svg viewBox="0 0 16 16">
+                            <path d="M11.838.714a2.438 2.438 0 0 1 3.448 3.448l-9.841 9.841c-.358.358-.79.633-1.267.806l-3.173 1.146a.75.75 0 0 1-.96-.96l1.146-3.173c.173-.476.448-.909.806-1.267l9.84-9.84zm2.387 1.06a.94.94 0 0 0-1.327 0l-9.84 9.842a1.95 1.95 0 0 0-.456.716L2 14.002l1.669-.604a1.95 1.95 0 0 0 .716-.455l9.841-9.841a.94.94 0 0 0 0-1.327z"></path>
+                        </svg>
+                        Editar perfil
+                    </li>
+                    <li class="copiar">
+                        <svg viewBox="0 0 16 16">
+                            <path d="M5 .75A.75.75 0 0 1 5.75 0h9.5a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75H12v-1.5h2.5v-9h-8V3H5z"></path><path d="M.75 4a.75.75 0 0 0-.75.75v10.5c0 .414.336.75.75.75h9.5a.75.75 0 0 0 .75-.75V4.75a.75.75 0 0 0-.75-.75zm.75 10.5v-9h8v9z"></path>
+                        </svg>
+                        Copiar URL
+                    </li>
+                </ul>
+            </section>
+            
+            <section class="cards"> <!-- Artistas mais ouvidos -->
                 <article class="albuns-titulo">
                     <!--Título-->
-                    <h1>Recomendado</h1>
+                    <article>
+                        <h1>Artistas mais tocados este mês</h1>
+                        <p>Visíveis apenas para você</p>
+                    </article>
+
                     <button>Mostrar tudo</button>
                 </article>
 
@@ -165,8 +184,51 @@
                 </section>
             </section>
         </section>
+        <section class="pop-up">
+            <section class="container">
+                <section class="container-top">
+                    <h1>Detalhes do perfil</h1>
+                    <button id="fechar-edicao">
+                        <svg viewBox="0 0 16 16">
+                            <path d="M2.47 2.47a.75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06"></path>
+                        </svg>
+                    </button>
+                </section>
+                <section class="container-content">
+                    <form>
+                        <section class="espacoFoto">
+                            <article id="foto">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M10.165 11.101a2.5 2.5 0 0 1-.67 3.766L5.5 17.173A3 3 0 0 0 4 19.771v.232h16.001v-.232a3 3 0 0 0-1.5-2.598l-3.995-2.306a2.5 2.5 0 0 1-.67-3.766l.521-.626.002-.002c.8-.955 1.303-1.987 1.375-3.19.041-.706-.088-1.433-.187-1.727a3.7 3.7 0 0 0-.768-1.334 3.767 3.767 0 0 0-5.557 0c-.34.37-.593.82-.768 1.334-.1.294-.228 1.021-.187 1.727.072 1.203.575 2.235 1.375 3.19l.002.002zm5.727.657-.52.624a.5.5 0 0 0 .134.753l3.995 2.306a5 5 0 0 1 2.5 4.33v2.232H2V19.77a5 5 0 0 1 2.5-4.33l3.995-2.306a.5.5 0 0 0 .134-.753l-.518-.622-.002-.002c-1-1.192-1.735-2.62-1.838-4.356-.056-.947.101-1.935.29-2.49A5.7 5.7 0 0 1 7.748 2.87a5.77 5.77 0 0 1 8.505 0 5.7 5.7 0 0 1 1.187 2.043c.189.554.346 1.542.29 2.489-.103 1.736-.838 3.163-1.837 4.355m-.001.001"></path>
+                                </svg>
+                            </article>
+                            
+                            <article class="foto-botoes">
+                                <input type="file" name="definir-foto-btn" id="definir-foto-btn">
+                                <label for="definir-foto-btn">
+                                    Escolher foto
+                                </label>
+                                <svg viewBox="0 0 16 16">
+                                    <path d="M11.838.714a2.438 2.438 0 0 1 3.448 3.448l-9.841 9.841c-.358.358-.79.633-1.267.806l-3.173 1.146a.75.75 0 0 1-.96-.96l1.146-3.173c.173-.476.448-.909.806-1.267l9.84-9.84zm2.387 1.06a.94.94 0 0 0-1.327 0l-9.84 9.842a1.95 1.95 0 0 0-.456.716L2 14.002l1.669-.604a1.95 1.95 0 0 0 .716-.455l9.841-9.841a.94.94 0 0 0 0-1.327z"></path>
+                                </svg>
+                                <button id="remover-foto">
+                                    Remover foto
+                                </button>
+                            </article>
+                        </section>
 
+                        <section class="input-btn">
+                            <label for="nome-usuario">Nome</label>
+                            <input type="text" id="nome-usuario" name="nome-usuario">
+        
+                            <input type="submit" value="Salvar">
+                        </section>
+                    </form>
+                </section>
+            </section>
+        </section>
     </section>
+
 
     <footer class="rodape">
         <section class="top">
