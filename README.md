@@ -21,7 +21,7 @@
 - Login de usuário(s) (Com persistência em Banco de Dados);
 
 - Recuperar senha, quando o usuário esquecer sua senha, deve ser possível recuperar a mesma ou realizar o processo de trocar a senha; 
-> ? Ver com o professor se a senha puder apenas ser redefinida quando o usuário estiver logado conta também. Se não uma opção é adicionar um botão de "Não tenho acesso ao email" e ele redirecionar para a recuperação/redefinição de senha. 
+> Senha pode ser redefinida apenas quando o usuário estiver logado conta também. 
 
 - No mínimo quatro telas de cadastro com persistência em Banco de Dados, pense no exemplo do Sistema Xhopii (Existem três cadastros: Cliente, Produto e Funcionários);
 
