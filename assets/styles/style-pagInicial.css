@@ -54,7 +54,7 @@
     background-color: #363636;
 }
 
-.principal .carrossel {
+.principal .cards {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -65,14 +65,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .principal .albuns-titulo h1 {
     font-size: 1.25em;
 }
 
-.principal .albuns-titulo button {
+.principal .albuns-titulo button,
+.principal .albuns-titulo p,
+.principal .albuns .card .nome-categoria .categoria {
     padding: 5px 0px;
     color: #b3aeae;
     font-size: .8em;
@@ -105,6 +107,7 @@
     background-color: #212121;
     cursor: pointer;
 }
+
 .albuns .card .card-img {
     display: flex;
     flex-direction: column;
@@ -113,14 +116,14 @@
 
     width: var(--tamanho-img);
     height: var(--tamanho-img);
-    border-radius: var(--raio-borda);
+    border-radius: 50%;
     background-color: #0f0f0f;
 }
 
 .albuns .card .card-img img {
     width: calc(var(--tamanho-img) - 10px);
     height: calc(var(--tamanho-img) - 10px);
-    border-radius: var(--raio-borda);
+    border-radius: 50%;
     background-color: #fff;
 }
 

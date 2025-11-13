@@ -10,6 +10,7 @@ body {
     min-height: 100vh;
     color: rgb(255, 255, 255);
     background-image: linear-gradient(180deg, rgb(41, 41, 41), rgb(0, 0, 0));
+    overflow: auto;
 
     /* Variáveis CSS */
     --valor-pad: 8px;

@@ -58,7 +58,7 @@
 
 .principal .infos .espacoFoto,
 .infos .espacoFoto button,
-.infos .espacoFoto article {
+.infos .espacoFoto article#foto-perfil {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,23 +68,18 @@
 
 .principal .infos .espacoFoto,
 .infos .espacoFoto button {
-    width: 16vw;
-    height: 16vw;
+    --tamanhoFoto: 16vw;
+
+    width: var(--tamanhoFoto);
+    height: var(--tamanhoFoto);
     border-radius: 50%;
     background-color: #282828;
     cursor: default;
 }
 
-.infos .espacoFoto svg {
-    width: 80%;
-    height: 80%;
-    fill: #7f7f7f;
-}
-
 .infos .espacoFoto img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+    width: var(--tamanhoFoto);
+    height: var(--tamanhoFoto);
 }
 
 .infos .espacoFoto button#definir-foto {
@@ -260,10 +255,9 @@
     opacity: 1;
 }
 
-.espacoFoto article#foto svg {
-    width: 5vw;
-    height: 5vw;
-    fill: #ffffffb3;
+.espacoFoto article img#foto-edicao {
+    width: 100%;
+    height: 100%;
 }
 
 .espacoFoto .foto-botoes button {
