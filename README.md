@@ -42,13 +42,13 @@
 > HTML e CSS - **Gi**
 
 - Cadastrar Usuario
-> HTML e CSS - **Ana**
+> HTML, CSS e JS - **Ana**
 
 - Cadastrar Artista
-> 
+> HTML, CSS e JS - **Ana**
 
 - Cadastrar Álbum/Ep/Single
-> 
+> HTML, CSS e JS - **Ana**
 
 - Cadastrar Playlist
 > 
@@ -69,16 +69,16 @@
 > HTML e CSS - **Gi**
 
 - Perfil do Usuário
->
+> HTML, CSS e JS - **Gi**
 
 - Perfil do Artista
->
+> 
 
 - Playlist
 >
 
 - Álbum/Ep/Single
->
+> HTML, CSS e JS - **Gi**
 
 - Fila de Reprodução
 >
@@ -90,7 +90,4 @@
 >
 
 - Tocando agora em tela cheia: Capa da música
->
-
-- Tocando agora em tela cheia: Foto do artista
 >
