@@ -141,7 +141,7 @@ function updateAuthButtons() {
 }
 
 function handleSignIn() {
-    window.location.href = '../index.html';
+    window.location.href = '../../index.html';
 }
 
 function handleSignOut() {
