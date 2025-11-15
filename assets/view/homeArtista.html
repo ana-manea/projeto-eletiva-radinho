@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style-homeArtista.css">
+    <script type="text/javascript" defer src="../scripts/dashboardArtista.js"></script>
+    <script type="text/javascript" defer src="../scripts/script-tradutor.js"></script>
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/GA-Station.png">
+    <title data-translate>Dashboard | Giana Station for Artists</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-left">
+                <a href="../view/pagInicial.html" class="artist-profile">
+                    <div class="artist-avatar">
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab6761860000101685ec2d2af58d2b838a744ac4" alt="AnaVitoria">
+                    </div>
+                    <div class="artist-info">
+                        <h2 data-translate>AnaVitória</h2>
+                        <p data-translate>Artista Verificado</p>
+                    </div>
+                </a>
+                <div class="nav-links">
+                    <a href="../view/homeArtista.html" class="nav-link active" data-translate>Home</a>
+                    <a href="../view/musicaArtista.html" class="nav-link" data-translate>Música</a>
+                    <a href="../view/audienciaArtista.html" class="nav-link" data-translate>Audiência</a>
+                    <a href="../view/perfilArtista.html" class="nav-link" data-translate>Perfil</a>
+                </div>
+            </div>
+            
+            <div class="header-actions">
+                <div class="language-selector">
+                    <button class="btn-language" id="languageBtn">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <button class="btn-outline" onclick="window.open('../view/pagInicial.html', '_blank')">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                    <span data-translate>Voltar ao Giana Station</span>
+                </button>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                    <svg class="close-icon" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <nav class="nav-mobile" id="navMobile">
+            <a href="../view/homeArtista.html" class="nav-link" data-translate>Home</a>
+            <a href="../view/musicaArtista.html" class="nav-link" data-translate>Música</a>
+            <a href="../view/audienciaArtista.html" class="nav-link" data-translate>Audiência</a>
+            <a href="../view/perfilArtista.html" class="nav-link" data-translate>Perfil</a>
+            
+            <div class="mobile-actions">
+                <div class="language-selector">
+                    <button class="btn-language" id="languageBtnMobile">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                        <span class="language-text" id="languageTextMobile">Português do Brasil</span>
+                    </button>
+                </div>
+                
+                <button class="btn-outline" onclick="window.open('../view/pagInicial.html', '_blank')">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                    <span data-translate>Voltar ao Giana Station</span>
+                </button>
+            </div>
+        </nav>
+    </nav>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <div class="hero-section">
+        <div class="hero-background" style="background-image: url('https://image-cdn-ak.spotifycdn.com/image/ab6761860000101685ec2d2af58d2b838a744ac4')"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-profile">
+                <div class="hero-avatar">
+                    <img src="https://image-cdn-ak.spotifycdn.com/image/ab6761860000101685ec2d2af58d2b838a744ac4" alt="AnaVitoria">
+                </div>
+                <div class="hero-info">
+                    <span class="badge-verified" data-translate>ARTISTA VERIFICADO</span>
+                    <h1 data-translate>AnaVitória</h1>
+                    <p data-translate>21.201 ouvintes mensais</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+    
+        <div class="stats-grid">
+            <div class="stat-card stat-primary">
+                <div class="stat-header">
+                    <p data-translate>Streams Totais</p>
+                    <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18V5l12-2v13"/>
+                        <circle cx="6" cy="18" r="3"/>
+                        <circle cx="18" cy="16" r="3"/>
+                    </svg>
+                </div>
+                <p class="stat-value">24.5K</p>
+                <p class="stat-change positive">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                        <polyline points="17 6 23 6 23 12"/>
+                    </svg>
+                    <span data-translate>+12.5% este mês</span>
+                </p>
+            </div>
+
+            <div class="stat-card stat-blue">
+                <div class="stat-header">
+                    <p data-translate>Ouvintes Mensais</p>
+                    <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                </div>
+                <p class="stat-value">21.2K</p>
+                <p class="stat-change positive">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                        <polyline points="17 6 23 6 23 12"/>
+                    </svg>
+                    <span data-translate>+8.3% este mês</span>
+                </p>
+            </div>
+
+            <div class="stat-card stat-purple">
+                <div class="stat-header">
+                    <p data-translate>Lançamentos</p>
+                    <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"/>
+                    </svg>
+                </div>
+                <p class="stat-value">12</p>
+                <p class="stat-change neutral">
+                    <span data-translate>4 singles, 5 EPs, 3 álbuns</span>
+                </p>
+            </div>
+
+            <div class="stat-card stat-accent">
+                <div class="stat-header">
+                    <p data-translate>Seguidores</p>
+                    <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                </div>
+                <p class="stat-value">5.3K</p>
+                <p class="stat-change positive">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                        <polyline points="17 6 23 6 23 12"/>
+                    </svg>
+                    <span data-translate>+170 esta semana</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="content-grid">
+            
+            <div class="content-left">
+            
+                <section class="section">
+                    <div class="section-header">
+                        <h2 data-translate>Lançamentos Recentes</h2>
+                        <a href="../view/musicaArtista.html" class="link-primary" data-translate>Ver todos</a>
+                    </div>
+                    <div class="releases-grid" id="recentReleases"></div>
+                </section>
+
+                <section class="section">
+                    <div class="card">
+                        <h2 data-translate>Visão Geral de Performance</h2>
+                        <div class="performance-list">
+                            <div class="performance-item">
+                                <div>
+                                    <p class="performance-label" data-translate>Últimos 7 dias</p>
+                                    <p class="performance-value">7,964</p>
+                                    <p class="performance-unit" data-translate>streams</p>
+                                </div>
+                                <div class="performance-change positive">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                                        <polyline points="17 6 23 6 23 12"/>
+                                    </svg>
+                                    <span>+15.3%</span>
+                                </div>
+                            </div>
+                            <div class="performance-item">
+                                <div>
+                                    <p class="performance-label" data-translate>Últimos 28 dias</p>
+                                    <p class="performance-value">24,531</p>
+                                    <p class="performance-unit" data-translate>streams</p>
+                                </div>
+                                <div class="performance-change positive">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                                        <polyline points="17 6 23 6 23 12"/>
+                                    </svg>
+                                    <span>+8.7%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="content-right">
+
+                <section class="section">
+                    <div class="card">
+                        <div class="section-header">
+                            <h2 data-translate>Top Músicas</h2>
+                            <a href="../view/audienciaArtista.html" class="link-primary" data-translate>Ver detalhes</a>
+                        </div>
+                        <div class="top-songs-list" id="topSongsList"></div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="card card-gradient">
+                        <h2 data-translate>Informações do Artista</h2>
+                        <div class="artist-info-list">
+                            <div class="info-item">
+                                <p class="info-label" data-translate>Gêneros</p>
+                                <p class="info-value" data-translate>MPB, Pop, Folk-pop</p>
+                            </div>
+            
+                            <div class="info-item">
+                                <p class="info-label" data-translate>Status</p>
+                                <span class="badge-active" data-translate>Ativo</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="../view/pagInicial.html" class="logo">
+                    <img src="../img/GA-Station.png" alt="Giana Station">
+                    <span>Giana Station</span>
+                </a>
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 data-translate>LINKS ÚTEIS</h3>
+                    <ul>
+                        <li><a href="#" data-translate>Sobre</a></li>
+                        <li><a href="#" data-translate>Imprensa e mídia</a></li>
+                        <li><a href="#" data-translate>Serviços</a></li>
+                        <li><a href="#">Loud & Clear</a></li>
+                        <li><a href="#" data-translate>Fale conosco</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 data-translate>FERRAMENTAS PARA CRIADORES</h3>
+                    <ul>
+                        <li><a href="#">Giana Station for Authors</a></li>
+                        <li><a href="#">Giana Station for Podcasters</a></li>
+                        <li><a href="#">Songwriting</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 data-translate>BAIXAR O APP</h3>
+                    <a href="#" class="app-download">
+                        <img src="https://images.ctfassets.net/lnhrh9gqejzl/3f47r3hsq1UeTC7YDVVdpX/0cd2ca1606246e4bd1d854cefab06972/footer-ios-a77e2676a3ffba2c521ce743a6d82eea.svg" alt="Download na App Store">
+                    </a>
+                    <a href="#" class="app-download">
+                        <img src="https://images.ctfassets.net/lnhrh9gqejzl/3v0BeAMmo25nBpqqYKTiAf/fc5fe970d1f54f73270110dd54512fd7/footer-android-1e8a7815136447656dae5d9e77dfd5ad.svg" alt="Download no Google Play">
+                    </a>
+                </div>
+
+                <div class="footer-col footer-social">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon-round">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-icon-round">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social-icon-round">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-links-bottom">
+                    <span>© 2025 Giana Station</span>
+                    <a href="#" data-translate>Legal</a>
+                    <a href="#" data-translate>Privacidade</a>
+                    <a href="#" data-translate>Cookies</a>
+                </div>
+                <button class="btn-language" id="languageBtnFooter">
+                    <svg class="icon-lang" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                    </svg>
+                    <span id="languageTextFooter">Português do Brasil</span>
+                </button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
