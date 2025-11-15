@@ -131,17 +131,14 @@ table.lista-musicas {
 
 .lista-musicas .num-lista svg {
     position: absolute;
-    top: 28%;
-    left: 28%;
+    top: 35%;
+    left: 25%;
 
     fill: currentColor;
-    width: 22px;
-    height: 22px;
-    
-    opacity: 0;
-}
-
-.lista-musicas td.num-lista:hover {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #424242;
     opacity: 0;
 }
 
